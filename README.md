@@ -42,10 +42,11 @@ OpenJDK 26 的 SA `PlatformInfo.knownCPU` 不包含 arm，LinuxDebuggerLocal 没
 - `logs/make-aarch64.log`：ARM64 make images 成功。
 - `logs/build-arm.log`：ARM32 make images 成功；后续 Termux deb 手册步骤因构建机当时无 Pandoc 而失败。
 - `logs/manuals-{arch}.log`：安装 Pandoc 后，两个架构再次 make images 成功，手册已进入最终 tar。
-- 本任务交付 tar；没有将 Termux deb 包流水线报告为通过。
 - ELF 检查验证文件层面的依赖存在、架构及对齐，不保证符号版本、运行时 dlopen、Android 权限或外部依赖的所有行为。
 - `tests/` 包含 CLI/JNI/GC/GUI 冒烟程序。Java 测试源码曾用主机 JDK25 编译，两个 JNI 库曾用 API28 工具链交叉编译；均不等于目标 JDK26/Android 测试通过。
 
 JNI 是 Java 调用 C/C++ 原生库的接口。AWT 提供窗口、图形和原生控件基础；Swing 是基于 AWT 的 Java GUI 组件库。这里的 GUI 通过 X11 显示，不是 Android 原生 View 界面。
+
+注：本文档由ChatGPT生成
 
 来源：[官方 RI](https://jdk.java.net/java-se-ri/26)、[官方 JDK26 源码](https://github.com/openjdk/jdk/tree/jdk-26-ga)、[Termux 参考实现](https://github.com/termux/termux-packages/tree/c0df78899f52c9905e07321c999f24dd434bb7ae/packages/openjdk-25)。
