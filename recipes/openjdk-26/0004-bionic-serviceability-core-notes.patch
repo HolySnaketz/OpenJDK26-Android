@@ -1,0 +1,86 @@
+--- a/src/jdk.hotspot.agent/linux/native/libsaproc/ps_core.c
++++ b/src/jdk.hotspot.agent/linux/native/libsaproc/ps_core.c
+@@ -36,6 +36,36 @@
+ #include "proc_service.h"
+ #include "salibelf.h"
+ 
++#ifdef __ANDROID__
++#include <sys/time.h>
++// Bionic exposes the register sets but omits the Linux NT_PRSTATUS note type.
++// Keep the kernel ELF core-note layout for each native word size.
++typedef struct {
++   struct elf_siginfo pr_info;
++   short pr_cursig;
++   unsigned long pr_sigpend;
++   unsigned long pr_sighold;
++   pid_t pr_pid;
++   pid_t pr_ppid;
++   pid_t pr_pgrp;
++   pid_t pr_sid;
++   struct timeval pr_utime;
++   struct timeval pr_stime;
++   struct timeval pr_cutime;
++   struct timeval pr_cstime;
++   elf_gregset_t pr_reg;
++   int pr_fpvalid;
++} prstatus_t;
++#if defined(__aarch64__)
++_Static_assert(offsetof(prstatus_t, pr_reg) == 112, "AArch64 NT_PRSTATUS register offset");
++_Static_assert(sizeof(prstatus_t) == 392, "AArch64 NT_PRSTATUS note size");
++#elif defined(__arm__)
++_Static_assert(offsetof(prstatus_t, pr_reg) == 72, "ARM NT_PRSTATUS register offset");
++_Static_assert(sizeof(prstatus_t) == 148, "ARM NT_PRSTATUS note size");
++#endif
++#endif
++
++
+ // This file has the libproc implementation to read core files.
+ // For live processes, refer to ps_proc.c. Portions of this is adapted
+ // /modelled after Solaris libproc.so (in particular Pcore.c)
+@@ -185,8 +215,10 @@
+ 
+ // read regs and create thread from NT_PRSTATUS entries from core file
+ static bool core_handle_prstatus(struct ps_prochandle* ph, const char* buf, size_t nbytes) {
+-   // we have to read prstatus_t from buf
+-   // assert(nbytes == sizeof(prstaus_t), "size mismatch on prstatus_t");
++   if (nbytes < sizeof(prstatus_t)) {
++      print_error("truncated NT_PRSTATUS core note\n");
++      return false;
++   }
+    prstatus_t* prstat = (prstatus_t*) buf;
+    thread_info* newthr;
+    print_debug("got integer regset for lwp %d\n", prstat->pr_pid);
+--- a/src/jdk.hotspot.agent/linux/native/libsaproc/elfmacros.h
++++ b/src/jdk.hotspot.agent/linux/native/libsaproc/elfmacros.h
+@@ -35,7 +35,9 @@
+ #define ELF_ADDR        Elf64_Addr
+ #define ELF_AUXV        Elf64_auxv_t
+ 
++#ifndef ELF_ST_TYPE
+ #define ELF_ST_TYPE     ELF64_ST_TYPE
++#endif
+ 
+ #else
+ 
+@@ -48,7 +50,9 @@
+ #define ELF_ADDR        Elf32_Addr
+ #define ELF_AUXV        Elf32_auxv_t
+ 
++#ifndef ELF_ST_TYPE
+ #define ELF_ST_TYPE     ELF32_ST_TYPE
++#endif
+ 
+ #endif
+ 
+--- a/src/hotspot/os/posix/os_posix.cpp
++++ b/src/hotspot/os/posix/os_posix.cpp
+@@ -1113,8 +1113,7 @@
+     }
+     path[strcspn(path, "\n")] = '\0';
+     if (strlen(path) < buflen) {
+-      os::snprintf(buf, buflen, "%s", path);
+-      found = true;
++      found = os::snprintf(buf, buflen, "%s", path) >= 0;
+     }
+     break;
+   }

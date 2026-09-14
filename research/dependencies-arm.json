@@ -1,0 +1,837 @@
+[
+  {
+    "file": "abseil-cpp_20260526.0_arm.deb",
+    "sha256": "cd2eda63e5d68e794ed014a88371897d1da4295ec1856c944e5f905960bba8e6",
+    "metadata": "Package: abseil-cpp\nVersion: 20260526.0\nArchitecture: arm"
+  },
+  {
+    "file": "alsa-lib_1.2.16.1_arm.deb",
+    "sha256": "6370aee2b5ff5f6933e893c005246f9aeb956802509414a91555a312c0c87526",
+    "metadata": "Package: alsa-lib\nVersion: 1.2.16.1\nArchitecture: arm"
+  },
+  {
+    "file": "alsa-plugins_1.2.12-1_arm.deb",
+    "sha256": "2b3b29094b40f7fc453345450a09d4bf4f0d38d3d4dedba967134530f469714e",
+    "metadata": "Package: alsa-plugins\nVersion: 1.2.12-1\nArchitecture: arm"
+  },
+  {
+    "file": "argp_1.5.0-1_arm.deb",
+    "sha256": "e92fabaddcd4f455a5ec3b950ecd15e0467daca5fe53f65f7b89e1d486558833",
+    "metadata": "Package: argp\nVersion: 1.5.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "attr_2.6.0_arm.deb",
+    "sha256": "7bea86aa0d78873c9f32f6b2edf20e3108e1710e5964be1f75f9b589f35008d3",
+    "metadata": "Package: attr\nVersion: 2.6.0\nArchitecture: arm"
+  },
+  {
+    "file": "bash_5.3.15_arm.deb",
+    "sha256": "e8a728e47a973b8826b7f3b5ee960812ec3dbd4f38392925ecb9fc0ec7680c72",
+    "metadata": "Package: bash\nVersion: 5.3.15\nArchitecture: arm"
+  },
+  {
+    "file": "blk-utils_2.42.1-4_arm.deb",
+    "sha256": "d057cba6a158b6baf6d9b05b29232ce0b22b1dfe042f0bd906fe05da404621ff",
+    "metadata": "Package: blk-utils\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "brotli_1.2.0_arm.deb",
+    "sha256": "f622b73351d42b7ec40c75f1d8662799680bc8d6a6d4c1f434566b3a462ab8ab",
+    "metadata": "Package: brotli\nVersion: 1.2.0\nArchitecture: arm"
+  },
+  {
+    "file": "bsdtar_3.8.9_arm.deb",
+    "sha256": "a2ecd07d9395faf4ff3fdfb67f748ab1475d7947ea59acccbbb7855e58a66d81",
+    "metadata": "Package: bsdtar\nVersion: 3.8.9\nArchitecture: arm"
+  },
+  {
+    "file": "bzip2_1.0.8-8_arm.deb",
+    "sha256": "ee0004b0d97b64e2b616e5394ca1716bef6200265800711237c4466e5b374f0d",
+    "metadata": "Package: bzip2\nVersion: 1.0.8-8\nArchitecture: arm"
+  },
+  {
+    "file": "check_0.15.2-3_arm.deb",
+    "sha256": "510140788f6d67923fffedee86027781899ff2519181e0f6b56662d6adc2096d",
+    "metadata": "Package: check\nVersion: 0.15.2-3\nArchitecture: arm"
+  },
+  {
+    "file": "coreutils_9.11-1_arm.deb",
+    "sha256": "c74cfb764282a8a445b8f57aa7b1a8fee8a52e56946960bfad9c906e7cf6cb4a",
+    "metadata": "Package: coreutils\nVersion: 9.11-1\nArchitecture: arm"
+  },
+  {
+    "file": "cups_2.4.19_arm.deb",
+    "sha256": "417478a7722d1ea4a20e4b4d1cb0294997de156e9fbf389e13c5ff0b5f9939fa",
+    "metadata": "Package: cups\nVersion: 2.4.19\nArchitecture: arm"
+  },
+  {
+    "file": "curl_8.22.0_arm.deb",
+    "sha256": "ae7a1facb95d75f3ae573d52c841f1c89ea567c36e1838a3ce0004ec7de9a930",
+    "metadata": "Package: curl\nVersion: 8.22.0\nArchitecture: arm"
+  },
+  {
+    "file": "dash_0.5.12-2_arm.deb",
+    "sha256": "429c6883c12956e9c9410ac4601e804b402dc306564db1e80aa8629ac0e7f983",
+    "metadata": "Package: dash\nVersion: 0.5.12-2\nArchitecture: arm"
+  },
+  {
+    "file": "dbus_1.16.2-3_arm.deb",
+    "sha256": "fd768990cc06fd291caddeecc4ff840c09b5c184ee924deca00acb4da731c423",
+    "metadata": "Package: dbus\nVersion: 1.16.2-3\nArchitecture: arm"
+  },
+  {
+    "file": "dialog_1.3-20260721-0_arm.deb",
+    "sha256": "d03d8826268f7018578187e4569405823beb2a6dbed36aa1259964fb5d6afdba",
+    "metadata": "Package: dialog\nVersion: 1.3-20260721-0\nArchitecture: arm"
+  },
+  {
+    "file": "diffutils_3.12-2_arm.deb",
+    "sha256": "cac13954cac65ec0ab10f93c25dbe0c6a600995a36683d00c368f41d32a99455",
+    "metadata": "Package: diffutils\nVersion: 3.12-2\nArchitecture: arm"
+  },
+  {
+    "file": "doxygen_1.18.0_arm.deb",
+    "sha256": "762894114a93d459d63dee80047de804bd4190296a206a26c61613ae1ede14b2",
+    "metadata": "Package: doxygen\nVersion: 1.18.0\nArchitecture: arm"
+  },
+  {
+    "file": "elfutils_0.196_arm.deb",
+    "sha256": "cd88b49a53070b9e8a7365591e1737b101820fd36619d62d781ed18b144960db",
+    "metadata": "Package: elfutils\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "fdisk_2.42.1-4_arm.deb",
+    "sha256": "0dd7f0510d43e7cb9cb523462ec2bbd1c1228bf76a0d14cc22da0df3c7b6c26a",
+    "metadata": "Package: fdisk\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "findutils_4.10.0-1_arm.deb",
+    "sha256": "f75844270b74a022005224ea4b231769fa73f3b47ff0a949645ecfa07d159099",
+    "metadata": "Package: findutils\nVersion: 4.10.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "flac_1.5.0-1_arm.deb",
+    "sha256": "d10cbd63d4c0a319e16e8c3469deee4a8592d3957c57235eba031d408d5738f9",
+    "metadata": "Package: flac\nVersion: 1.5.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "fontconfig-utils_2.18.3_arm.deb",
+    "sha256": "83fb4f4c4544a5871b36fbf99c7bdde2d1ffbec29dc5bbdecd89450664bdb8e6",
+    "metadata": "Package: fontconfig-utils\nVersion: 2.18.3\nArchitecture: arm"
+  },
+  {
+    "file": "fontconfig_2.18.3_arm.deb",
+    "sha256": "cd1d7659b395a165fa2d924a14f0ba23d7ef4bd40ba3e2fbbb28b77c439d1b33",
+    "metadata": "Package: fontconfig\nVersion: 2.18.3\nArchitecture: arm"
+  },
+  {
+    "file": "freetype_2.14.3_arm.deb",
+    "sha256": "6215b8d7621b01931db07162d9a1a8b2db0a76824ec109b77cd2ff43a17d3ab2",
+    "metadata": "Package: freetype\nVersion: 2.14.3\nArchitecture: arm"
+  },
+  {
+    "file": "gawk_5.3.2_arm.deb",
+    "sha256": "6e95d82418829a7377ad11cf22353d8fb909be1d31d9f4dec345d8e290596509",
+    "metadata": "Package: gawk\nVersion: 5.3.2\nArchitecture: arm"
+  },
+  {
+    "file": "gdbm_1.26-1_arm.deb",
+    "sha256": "52ce193d089b36f31432fc23b788ec25bcbf5f91427b117d6bb9b79a025a285c",
+    "metadata": "Package: gdbm\nVersion: 1.26-1\nArchitecture: arm"
+  },
+  {
+    "file": "giflib-utils_5.2.2-2_arm.deb",
+    "sha256": "4145406a217fe8b154638344390fd252952e89d2550f360f7d07c83ff996fea4",
+    "metadata": "Package: giflib-utils\nVersion: 5.2.2-2\nArchitecture: arm"
+  },
+  {
+    "file": "giflib_5.2.2-2_arm.deb",
+    "sha256": "b2263633c4d08c68a73d2a87300f76669a805175ca11ce304cdabefe1bd17387",
+    "metadata": "Package: giflib\nVersion: 5.2.2-2\nArchitecture: arm"
+  },
+  {
+    "file": "glib_2.90.0_arm.deb",
+    "sha256": "2422fd72c7050e9418327e4e0f138ee3133859e068f71ce6efdb6e6040016929",
+    "metadata": "Package: glib\nVersion: 2.90.0\nArchitecture: arm"
+  },
+  {
+    "file": "gnutls_3.8.13-1_arm.deb",
+    "sha256": "45de054d132a23cddf35f3b9383fbef39f447c2cfbe2f6a3847e723a76e5cb6a",
+    "metadata": "Package: gnutls\nVersion: 3.8.13-1\nArchitecture: arm"
+  },
+  {
+    "file": "grep_3.12-3_arm.deb",
+    "sha256": "af4d4cc7b67f221fdb8779ed75179ee522b2c9f4e46e1d7ab66469eaa864fa64",
+    "metadata": "Package: grep\nVersion: 3.12-3\nArchitecture: arm"
+  },
+  {
+    "file": "gzip_1.14-1_arm.deb",
+    "sha256": "8054adb80c4c5c5b34e818ad708a859b9aa2cd4b1636e49e6764e0691d57bcd4",
+    "metadata": "Package: gzip\nVersion: 1.14-1\nArchitecture: arm"
+  },
+  {
+    "file": "iconv_1.19_arm.deb",
+    "sha256": "30ad80af9b41f56532d176812c67f8447a6a393dd989e151567f85bff70dd2ee",
+    "metadata": "Package: iconv\nVersion: 1.19\nArchitecture: arm"
+  },
+  {
+    "file": "icu-devtools_78.3_arm.deb",
+    "sha256": "9f61fa195bfcb97625680ade7a635663effa3c8fdeee7e913abdca95295f9dee",
+    "metadata": "Package: icu-devtools\nVersion: 78.3\nArchitecture: arm"
+  },
+  {
+    "file": "json-c_0.19_arm.deb",
+    "sha256": "664cd89c15c0976f38ac657af8109f493600e1ef1d374d444336ee1316cea41a",
+    "metadata": "Package: json-c\nVersion: 0.19\nArchitecture: arm"
+  },
+  {
+    "file": "lame_3.100-7_arm.deb",
+    "sha256": "e2c9b4925a0146118999526a9245abc4eb9068ba82bbf47c75802730c05f3c7b",
+    "metadata": "Package: lame\nVersion: 3.100-7\nArchitecture: arm"
+  },
+  {
+    "file": "less_704_arm.deb",
+    "sha256": "a656f0e30c34481e2c8c9bf196b55d909dcd9e00dc00624af78fff0a1a478107",
+    "metadata": "Package: less\nVersion: 704\nArchitecture: arm"
+  },
+  {
+    "file": "libacl_2.4.0_arm.deb",
+    "sha256": "114f605b7bf0f7229f8341a94ce173e0954210a61c4d58b883eeec8ca6f6c5c1",
+    "metadata": "Package: libacl\nVersion: 2.4.0\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-execinfo_0.1-3_arm.deb",
+    "sha256": "9d78f90e7e8f9e02edb176b40acd288c00e4d4c25f22c068656a2e0da71fdd38",
+    "metadata": "Package: libandroid-execinfo\nVersion: 0.1-3\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-glob_0.6-3_arm.deb",
+    "sha256": "a499b313eac0cd712d6196947649cd4390c5c5a0ac5f4b6f52d95b49367faf96",
+    "metadata": "Package: libandroid-glob\nVersion: 0.6-3\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-posix-semaphore_0.1-4_arm.deb",
+    "sha256": "317f87d9a3e127bc9d694a558dccac7ff8080f36cbcc33d9c478819f029b6055",
+    "metadata": "Package: libandroid-posix-semaphore\nVersion: 0.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-selinux_14.0.0.11-1_arm.deb",
+    "sha256": "8b3e3348f3189de9bed169a56f92eabfd46d9298efd11029714ad9a1d5b4fe4d",
+    "metadata": "Package: libandroid-selinux\nVersion: 14.0.0.11-1\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-shmem_0.7_arm.deb",
+    "sha256": "5832fd11dca9be2a288dd8fbc2b2799b289c812c7a8764f1f8234c425aa64ce5",
+    "metadata": "Package: libandroid-shmem\nVersion: 0.7\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-spawn_0.3_arm.deb",
+    "sha256": "76b340753822f4ebf45855a3d40481ed5690feda920cd99aed029e3c1c1957c8",
+    "metadata": "Package: libandroid-spawn\nVersion: 0.3\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-stub_29-3_arm.deb",
+    "sha256": "8a11edcbe4da44b1f96af4cdc146c76753617a69eb458322df6524aea5bb0fe5",
+    "metadata": "Package: libandroid-stub\nVersion: 29-3\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-support_29-1_arm.deb",
+    "sha256": "67150f1cb050d4852cb21d2b138676c68920b2ec7f059795b287b75cf2cf6cb6",
+    "metadata": "Package: libandroid-support\nVersion: 29-1\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-sysv-semaphore_0.1-1_arm.deb",
+    "sha256": "37df180bde1e687c45e82412e42324aabcb8485ea03a1e73c5a32111f627dc13",
+    "metadata": "Package: libandroid-sysv-semaphore\nVersion: 0.1-1\nArchitecture: arm"
+  },
+  {
+    "file": "libandroid-utimes_0.4_arm.deb",
+    "sha256": "d4ce8c46bd30a4d564a98f941561e221c6bac22f9105d2f079761297bc71ad0c",
+    "metadata": "Package: libandroid-utimes\nVersion: 0.4\nArchitecture: arm"
+  },
+  {
+    "file": "libarchive_3.8.9_arm.deb",
+    "sha256": "29109056255771751b40a49fec28fc9ad57ce728eea714f6096a60a13099896f",
+    "metadata": "Package: libarchive\nVersion: 3.8.9\nArchitecture: arm"
+  },
+  {
+    "file": "libasm-static_0.196_arm.deb",
+    "sha256": "80c4c49e3e6ae409cceaaffeddd5e6866ee2d35ec3c4230af810bafcd40b02e1",
+    "metadata": "Package: libasm-static\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "libasm_0.196_arm.deb",
+    "sha256": "e731ef0c3a6281353539a3ce69879ca0542e24a5c80d26e69455221294111b00",
+    "metadata": "Package: libasm\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "libblkid_2.42.1-4_arm.deb",
+    "sha256": "25ceba7383d3bf8edc5091823dba8505c55abdbc8819538388502e23b2a34405",
+    "metadata": "Package: libblkid\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "libbz2_1.0.8-8_arm.deb",
+    "sha256": "e432fbc010384ebb73c7f381e6016312870152fff01a0d413a274ba6bfe9bd4c",
+    "metadata": "Package: libbz2\nVersion: 1.0.8-8\nArchitecture: arm"
+  },
+  {
+    "file": "libc++_29_arm.deb",
+    "sha256": "f05868ce09547507b9f1df159251c0ca29eb8920be4a84fb36016cfdf7dfcda8",
+    "metadata": "Package: libc++\nVersion: 29\nArchitecture: arm"
+  },
+  {
+    "file": "libcap-ng_2:0.9.6_arm.deb",
+    "sha256": "da17fa94a3b951645c6275b84dc54004628f95ea718a731e374bed4cd21ac396",
+    "metadata": "Package: libcap-ng\nVersion: 2:0.9.6\nArchitecture: arm"
+  },
+  {
+    "file": "libcrypt_0.2-6_arm.deb",
+    "sha256": "111ff17330ac375b12677bd14d8d44edea2e423dffabc2dd26583d5940e4fcb1",
+    "metadata": "Package: libcrypt\nVersion: 0.2-6\nArchitecture: arm"
+  },
+  {
+    "file": "libcurl_8.22.0_arm.deb",
+    "sha256": "5e6fef9ee8097be1680a44d2282249b68ef03aff340fa36c26e27e797decd0a2",
+    "metadata": "Package: libcurl\nVersion: 8.22.0\nArchitecture: arm"
+  },
+  {
+    "file": "libdebuginfod_0.196_arm.deb",
+    "sha256": "bf93b63c3a00df057f1035039c6ce364b71bd75717290d0cb80772ec027a6858",
+    "metadata": "Package: libdebuginfod\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "libdw-static_0.196_arm.deb",
+    "sha256": "b6e6b5094631533093087008b6d4afac2f733774670e59c19567ebc78fe742eb",
+    "metadata": "Package: libdw-static\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "libdw_0.196_arm.deb",
+    "sha256": "7be6fd4c3507246adfcf5f7639a93eb073677653169b26860a03ec4e18adc25d",
+    "metadata": "Package: libdw\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "libelf_0.196_arm.deb",
+    "sha256": "52f95495f54ab004ee0ce10f8fcfff3321cd113ff0ca4069f7f3e1b8b72a6c76",
+    "metadata": "Package: libelf\nVersion: 0.196\nArchitecture: arm"
+  },
+  {
+    "file": "libevent_2.1.13_arm.deb",
+    "sha256": "0e142de6f7d2e461badfbc5d0cb9b1abd4ba31a314ac6129ca7ce11f159c8f93",
+    "metadata": "Package: libevent\nVersion: 2.1.13\nArchitecture: arm"
+  },
+  {
+    "file": "libexpat_2.8.4_arm.deb",
+    "sha256": "5762b710baa9289853be15c740760f246b5fa19d6994fe0b33bfc9e9a05ca0de",
+    "metadata": "Package: libexpat\nVersion: 2.8.4\nArchitecture: arm"
+  },
+  {
+    "file": "libfdisk_2.42.1-4_arm.deb",
+    "sha256": "eecac672a0d1b98837759333a15843d0235f3c68e2bce92207762ef298efeff9",
+    "metadata": "Package: libfdisk\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "libffi_3.8.0_arm.deb",
+    "sha256": "27fc13bac4366ea270689a59a4a41fde52dfdbbd13418b29ac32ee66a0c43396",
+    "metadata": "Package: libffi\nVersion: 3.8.0\nArchitecture: arm"
+  },
+  {
+    "file": "libflac_1.5.0-1_arm.deb",
+    "sha256": "303943c28e47750a220ca914c5e75d6c7dd087862e85ba1ac55bbe10930a7cd2",
+    "metadata": "Package: libflac\nVersion: 1.5.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "libgmp_6.3.0-2_arm.deb",
+    "sha256": "84d462fe805f361850742827283f801be27e7354b74135b243a2515ae9e5c388",
+    "metadata": "Package: libgmp\nVersion: 6.3.0-2\nArchitecture: arm"
+  },
+  {
+    "file": "libgnutls_3.8.13-1_arm.deb",
+    "sha256": "7f68f61082429e4f3d5cbd83dc2fdf05a377d9ac6ecda883807ddcf044121a2b",
+    "metadata": "Package: libgnutls\nVersion: 3.8.13-1\nArchitecture: arm"
+  },
+  {
+    "file": "libice_1.1.2-1_arm.deb",
+    "sha256": "655498d024de2621545356f426bde5c620caf24e99a5cd7d02ad7906a0c5304d",
+    "metadata": "Package: libice\nVersion: 1.1.2-1\nArchitecture: arm"
+  },
+  {
+    "file": "libiconv_1.19_arm.deb",
+    "sha256": "a540d434d458faccb4391a1d870bddaae5cf0a061b8fc52102b5642f6d7a9445",
+    "metadata": "Package: libiconv\nVersion: 1.19\nArchitecture: arm"
+  },
+  {
+    "file": "libicu_78.3_arm.deb",
+    "sha256": "3ddca664e8cbe4cc775f585dc6457c65b3de454f5ca10bede412dfffbbbab8a8",
+    "metadata": "Package: libicu\nVersion: 78.3\nArchitecture: arm"
+  },
+  {
+    "file": "libidn2_2.3.8-1_arm.deb",
+    "sha256": "5c263581ff0ed0770bd9688980901ddf0cf10499183e020ec470d9f9a004cf80",
+    "metadata": "Package: libidn2\nVersion: 2.3.8-1\nArchitecture: arm"
+  },
+  {
+    "file": "libjpeg-turbo-progs_3.2.0_arm.deb",
+    "sha256": "dd1cea6e61662c4679b5b93a40e52d9d5e965a544221beb9a4d68492d3489cfb",
+    "metadata": "Package: libjpeg-turbo-progs\nVersion: 3.2.0\nArchitecture: arm"
+  },
+  {
+    "file": "libjpeg-turbo_3.2.0_arm.deb",
+    "sha256": "cfba65dd5d10c56d697c1f420f6dc3778270ea456777d836ef0dc8b4afef9fa0",
+    "metadata": "Package: libjpeg-turbo\nVersion: 3.2.0\nArchitecture: arm"
+  },
+  {
+    "file": "libltdl_2.6.2_arm.deb",
+    "sha256": "9de613abbcb09ec605510a927dda1d55508f5fcbc7e5ef7768700dea03be81d5",
+    "metadata": "Package: libltdl\nVersion: 2.6.2\nArchitecture: arm"
+  },
+  {
+    "file": "liblzma_5.8.4_arm.deb",
+    "sha256": "428f2a7b3b6e1ccaa69a87ef60e2748985516b48ee4b7e37c4183b84ae454871",
+    "metadata": "Package: liblzma\nVersion: 5.8.4\nArchitecture: arm"
+  },
+  {
+    "file": "libmicrohttpd_1.0.10_arm.deb",
+    "sha256": "54ad64982022fad870b4b13a454cb68f331e3ff55ae44823a2be73d214def9d6",
+    "metadata": "Package: libmicrohttpd\nVersion: 1.0.10\nArchitecture: arm"
+  },
+  {
+    "file": "libmount_2.42.1-4_arm.deb",
+    "sha256": "a2efcbc0a6020722099f5fe24558534bf20bdc1151d06ab85c4f8a2e9938a4ae",
+    "metadata": "Package: libmount\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "libmp3lame_3.100-7_arm.deb",
+    "sha256": "fc958f59b8b8dfdd7f07f0c11b8c43a55fda04c64f32ff0030e7298147c99113",
+    "metadata": "Package: libmp3lame\nVersion: 3.100-7\nArchitecture: arm"
+  },
+  {
+    "file": "libmpfr_4.2.1-1_arm.deb",
+    "sha256": "c0355f7d12723d0a23593a366d1a7a1e8fae3cca57fe4d0fa1727e389d9c677b",
+    "metadata": "Package: libmpfr\nVersion: 4.2.1-1\nArchitecture: arm"
+  },
+  {
+    "file": "libmpg123_1.33.7_arm.deb",
+    "sha256": "65d5445454d2ad167b9b5c6d5946736655fba77b33145274a3d4d1744bef5789",
+    "metadata": "Package: libmpg123\nVersion: 1.33.7\nArchitecture: arm"
+  },
+  {
+    "file": "libnettle_4.0+really3.10.2_arm.deb",
+    "sha256": "9b428dd65b3e5a5a732a51430eaea49643da0a9d1445c73d474678275934cf47",
+    "metadata": "Package: libnettle\nVersion: 4.0+really3.10.2\nArchitecture: arm"
+  },
+  {
+    "file": "libnghttp2_1.70.0_arm.deb",
+    "sha256": "d21d8375a670dd223563629a69c8ff3fb31c3c0559828178ab05f3d6d08e8f1d",
+    "metadata": "Package: libnghttp2\nVersion: 1.70.0\nArchitecture: arm"
+  },
+  {
+    "file": "libnghttp3_1.18.0_arm.deb",
+    "sha256": "43ff765ef6f4b3262aa6aca5829b94fd53890d8ae965a442f4f258418d8c185c",
+    "metadata": "Package: libnghttp3\nVersion: 1.18.0\nArchitecture: arm"
+  },
+  {
+    "file": "libngtcp2_1.25.0_arm.deb",
+    "sha256": "5dc0d716901f7ed7c679f939ed1924ef16f1ac455b75686af92de2ed57125f2a",
+    "metadata": "Package: libngtcp2\nVersion: 1.25.0\nArchitecture: arm"
+  },
+  {
+    "file": "libogg_1.3.6-1_arm.deb",
+    "sha256": "8f7f1754210f878556040f5f8de5cfe50b1c55c5aa1f6a07aa35276622184999",
+    "metadata": "Package: libogg\nVersion: 1.3.6-1\nArchitecture: arm"
+  },
+  {
+    "file": "libopus_1.6.1_arm.deb",
+    "sha256": "a28ceddf3fa2fdf02308e9444712d727839b077f44c0e210f7fedd9dcabb3651",
+    "metadata": "Package: libopus\nVersion: 1.6.1\nArchitecture: arm"
+  },
+  {
+    "file": "libpng_1.6.58_arm.deb",
+    "sha256": "ae9ed312b20b1e863a95db34941b15f465579d910c531fc03df389a42804b968",
+    "metadata": "Package: libpng\nVersion: 1.6.58\nArchitecture: arm"
+  },
+  {
+    "file": "libsm_1.2.6-1_arm.deb",
+    "sha256": "26c85a11d1bab7665b7b082da6c584fa9ef2bc3aad5eebea254a9eefa6ccb2c9",
+    "metadata": "Package: libsm\nVersion: 1.2.6-1\nArchitecture: arm"
+  },
+  {
+    "file": "libsmartcols_2.42.1-4_arm.deb",
+    "sha256": "c786fcaf2a98927d2d780a63adb3a42e52a5cc07d0d72cc8d6e91f4771881d51",
+    "metadata": "Package: libsmartcols\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "libsndfile_1.2.2-3_arm.deb",
+    "sha256": "70ef688cedcbeff4eb6381ad0c595b9f1717d2bfee50c6bb8e7d06c2b03ed614",
+    "metadata": "Package: libsndfile\nVersion: 1.2.2-3\nArchitecture: arm"
+  },
+  {
+    "file": "libsoxr_0.1.3-8_arm.deb",
+    "sha256": "7673fe2865f99bb00b41e98d6cc2d57629f438fc55b04ed7c9c26c6ca7340e2f",
+    "metadata": "Package: libsoxr\nVersion: 0.1.3-8\nArchitecture: arm"
+  },
+  {
+    "file": "libsqlite-tcl_3.53.4_arm.deb",
+    "sha256": "2ae312fcf977294425f55d0b4908290bd403f9a3e66989999ef2a158d0537b30",
+    "metadata": "Package: libsqlite-tcl\nVersion: 3.53.4\nArchitecture: arm"
+  },
+  {
+    "file": "libsqlite_3.53.4_arm.deb",
+    "sha256": "0ff2b4cccfd0b4925659e91f0c72fb1e5bce7a3d08169d2701416273436f9f8b",
+    "metadata": "Package: libsqlite\nVersion: 3.53.4\nArchitecture: arm"
+  },
+  {
+    "file": "libssh2_1.11.1-2_arm.deb",
+    "sha256": "5c39a041e53288fd763464be5bff2bab72401965c93bb1ab4f85f9574fb77a63",
+    "metadata": "Package: libssh2\nVersion: 1.11.1-2\nArchitecture: arm"
+  },
+  {
+    "file": "libtasn1_4.21.0_arm.deb",
+    "sha256": "7fb32af00bbd67523e67f90f6b09329c5d6f229dee8aa38aa9998eefed99ec08",
+    "metadata": "Package: libtasn1\nVersion: 4.21.0\nArchitecture: arm"
+  },
+  {
+    "file": "libtiff-utils_4.7.2_arm.deb",
+    "sha256": "da4d5370290d45f455597ea1115f19a40bb690bcbff2b04d928b133ae964f4d1",
+    "metadata": "Package: libtiff-utils\nVersion: 4.7.2\nArchitecture: arm"
+  },
+  {
+    "file": "libtiff_4.7.2_arm.deb",
+    "sha256": "f08ffd8a85a723f837ed212b377059375741dbd63f8ea939491f15625e3f19d3",
+    "metadata": "Package: libtiff\nVersion: 4.7.2\nArchitecture: arm"
+  },
+  {
+    "file": "libtool_2.6.2_arm.deb",
+    "sha256": "60478ad7fbb2e6f501fe9537ac5d8aa14644ccc49006b1dc08dac0954733dd29",
+    "metadata": "Package: libtool\nVersion: 2.6.2\nArchitecture: arm"
+  },
+  {
+    "file": "libunbound_1.26.0_arm.deb",
+    "sha256": "cb390adfa166daf8d112efc8ff594a7a3b8910542100b7479f0e52b0b16c9309",
+    "metadata": "Package: libunbound\nVersion: 1.26.0\nArchitecture: arm"
+  },
+  {
+    "file": "libunistring_1.4.2_arm.deb",
+    "sha256": "da3cbf9f0a2c8f5700df44e31110b84b7c9e19496010646a9147fb4a5c35ecad",
+    "metadata": "Package: libunistring\nVersion: 1.4.2\nArchitecture: arm"
+  },
+  {
+    "file": "libuuid_2.42.1-4_arm.deb",
+    "sha256": "65dc829bce7364b260724658f8f034778307594187d026a493dd1da6cc8f3d41",
+    "metadata": "Package: libuuid\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "libvorbis_1.3.7-4_arm.deb",
+    "sha256": "d6fa26aa0ce8146bdda0f39affe45a649ed23365e6b905da9314ec73cf14e12f",
+    "metadata": "Package: libvorbis\nVersion: 1.3.7-4\nArchitecture: arm"
+  },
+  {
+    "file": "libwebrtc-audio-processing_1.3-5_arm.deb",
+    "sha256": "71ca8f95f2eb0d7fb1da5849524038c197e7a4a378cdd18dad16562e49074eab",
+    "metadata": "Package: libwebrtc-audio-processing\nVersion: 1.3-5\nArchitecture: arm"
+  },
+  {
+    "file": "libx11_1.8.13-1_arm.deb",
+    "sha256": "f20cdfd9fbb9f26d3b31073ad372c1712f2bf68a249efba6e025ef0f237d045e",
+    "metadata": "Package: libx11\nVersion: 1.8.13-1\nArchitecture: arm"
+  },
+  {
+    "file": "libxau_1.0.12-2_arm.deb",
+    "sha256": "46a7c913fdb1ccf3e803fed55ceac41deecbfd36a6dca86c851341a99e460fb3",
+    "metadata": "Package: libxau\nVersion: 1.0.12-2\nArchitecture: arm"
+  },
+  {
+    "file": "libxcb_1.17.0-1_arm.deb",
+    "sha256": "fff800917f83666b522fb0f9923f724aaf8edd802d7761d742ea55645a79c5c9",
+    "metadata": "Package: libxcb\nVersion: 1.17.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "libxdmcp_1.1.5-2_arm.deb",
+    "sha256": "0db6b14a17c769598cba3cfac38814a4493c445a44a625f89bd99223cf142e74",
+    "metadata": "Package: libxdmcp\nVersion: 1.1.5-2\nArchitecture: arm"
+  },
+  {
+    "file": "libxext_1.3.7_arm.deb",
+    "sha256": "f8b342badc8930176f98263020fbcfa10cdffca923d059db28c7ad3332525394",
+    "metadata": "Package: libxext\nVersion: 1.3.7\nArchitecture: arm"
+  },
+  {
+    "file": "libxfixes_6.0.2_arm.deb",
+    "sha256": "27ae9bcb85bc653f0c66c26faafce1ff8f4c140ddd3895e35273686ebc24b822",
+    "metadata": "Package: libxfixes\nVersion: 6.0.2\nArchitecture: arm"
+  },
+  {
+    "file": "libxft_2.3.9-1_arm.deb",
+    "sha256": "e81c2e01777c12e834d5286c4c4e93960ff00d5c238940a7e476ae7f9b7ab60c",
+    "metadata": "Package: libxft\nVersion: 2.3.9-1\nArchitecture: arm"
+  },
+  {
+    "file": "libxi_1.8.3_arm.deb",
+    "sha256": "fa8881878c2ebed289c1f1b8c283f0827d5543b29435dcce0a0705c79086ac4d",
+    "metadata": "Package: libxi\nVersion: 1.8.3\nArchitecture: arm"
+  },
+  {
+    "file": "libxml2-python_2.15.4_arm.deb",
+    "sha256": "f996ca98084b16f3b2cc23adc664b7f2cfa4fbab467dd43c2bc5e86e6b79cfde",
+    "metadata": "Package: libxml2-python\nVersion: 2.15.4\nArchitecture: arm"
+  },
+  {
+    "file": "libxml2-utils_2.15.4_arm.deb",
+    "sha256": "edbcb7c5dc43f59099b58da2cf0125a344e5b3140a123db8656d0b6bb57f7aee",
+    "metadata": "Package: libxml2-utils\nVersion: 2.15.4\nArchitecture: arm"
+  },
+  {
+    "file": "libxml2_2.15.4_arm.deb",
+    "sha256": "2fbf9eefd1f593c4e8d061fd1fd89fcaf95561c4afccd2adf36df5fe91a342f5",
+    "metadata": "Package: libxml2\nVersion: 2.15.4\nArchitecture: arm"
+  },
+  {
+    "file": "libxrandr_1.5.5_arm.deb",
+    "sha256": "3e1a9ef80f105a28899bf2c7c6ff2e92ed2c9078fc0bca33c62a35eefb294102",
+    "metadata": "Package: libxrandr\nVersion: 1.5.5\nArchitecture: arm"
+  },
+  {
+    "file": "libxrender_0.9.12-1_arm.deb",
+    "sha256": "2620a88c61a07a30b83d7bb6cbdb61b2af6eb33e6c1ab83d8c5c70c3ccbd59c1",
+    "metadata": "Package: libxrender\nVersion: 0.9.12-1\nArchitecture: arm"
+  },
+  {
+    "file": "libxss_1.2.5_arm.deb",
+    "sha256": "cb153f853d9baeebc20e814af2facc2a5fd22a7068b72fc4a26468bec85f3c9a",
+    "metadata": "Package: libxss\nVersion: 1.2.5\nArchitecture: arm"
+  },
+  {
+    "file": "libxt_1.3.1-1_arm.deb",
+    "sha256": "82c188f581fe5fc539d6380f04dfa0881d3d6198e0abe940c3341b507c72507b",
+    "metadata": "Package: libxt\nVersion: 1.3.1-1\nArchitecture: arm"
+  },
+  {
+    "file": "libxtst_1.2.5-1_arm.deb",
+    "sha256": "6592dfd202b75583ddc6d6511abf44d93637097289ef73c1fb970096c3f7293a",
+    "metadata": "Package: libxtst\nVersion: 1.2.5-1\nArchitecture: arm"
+  },
+  {
+    "file": "littlecms-utils_2.19.1_arm.deb",
+    "sha256": "327e50eff2ea2d13de3109fdd2170886044017ed2580aa13841d98f44a31b337",
+    "metadata": "Package: littlecms-utils\nVersion: 2.19.1\nArchitecture: arm"
+  },
+  {
+    "file": "littlecms_2.19.1_arm.deb",
+    "sha256": "3cad68e1e7077dfbc60363044d018e0491a32ac9df9ef34d01ae91d128cb39f5",
+    "metadata": "Package: littlecms\nVersion: 2.19.1\nArchitecture: arm"
+  },
+  {
+    "file": "mount-utils_2.42.1-4_arm.deb",
+    "sha256": "bbe8dfeefca013af4cc06e7f41414475fd7f40815f0539dca3236b6e5a73e1f8",
+    "metadata": "Package: mount-utils\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "mpg123_1.33.7_arm.deb",
+    "sha256": "5de9d4f7e8355f19554271d1b9f84261ab721517691ae93f64bbd6b11f4ce6cb",
+    "metadata": "Package: mpg123\nVersion: 1.33.7\nArchitecture: arm"
+  },
+  {
+    "file": "ncurses-ui-libs-static_6.6.20260307+really6.5.20250830_arm.deb",
+    "sha256": "ff7a04803e6eed9f5515c2726eb0da012a45f5727567154cffa2591700626154",
+    "metadata": "Package: ncurses-ui-libs-static\nVersion: 6.6.20260307+really6.5.20250830\nArchitecture: arm"
+  },
+  {
+    "file": "ncurses-ui-libs_6.6.20260307+really6.5.20250830_arm.deb",
+    "sha256": "1379d901c39abf9a5ca1a6f408fb0ab0047a6f23e95a28573fcea05675450877",
+    "metadata": "Package: ncurses-ui-libs\nVersion: 6.6.20260307+really6.5.20250830\nArchitecture: arm"
+  },
+  {
+    "file": "ncurses-utils_6.6.20260307+really6.5.20250830_arm.deb",
+    "sha256": "db57e60d91de9fd8b84368b570b4c096911cd9a772c7e582c3ce24a89b249259",
+    "metadata": "Package: ncurses-utils\nVersion: 6.6.20260307+really6.5.20250830\nArchitecture: arm"
+  },
+  {
+    "file": "ncurses_6.6.20260307+really6.5.20250830_arm.deb",
+    "sha256": "a729f77be4109f8123aeb59702e49bf2d30f67a213d305c276859af52e12a3bb",
+    "metadata": "Package: ncurses\nVersion: 6.6.20260307+really6.5.20250830\nArchitecture: arm"
+  },
+  {
+    "file": "nettle_4.0+really3.10.2_arm.deb",
+    "sha256": "795a312335ac84d0de41261aca35fa5fd115eb7497d092adb5e1056e9ddfaa80",
+    "metadata": "Package: nettle\nVersion: 4.0+really3.10.2\nArchitecture: arm"
+  },
+  {
+    "file": "openssl-tool_1:3.6.3_arm.deb",
+    "sha256": "495cf175284466b8a71993a7bb65b60f356841f4106431f8374f40e298c55a71",
+    "metadata": "Package: openssl-tool\nVersion: 1:3.6.3\nArchitecture: arm"
+  },
+  {
+    "file": "openssl_1:3.6.3_arm.deb",
+    "sha256": "9c0f9853fa3d6ee801ef76cb64d957ca6c5fed53dbc36168fbc37959db069dc3",
+    "metadata": "Package: openssl\nVersion: 1:3.6.3\nArchitecture: arm"
+  },
+  {
+    "file": "p11-kit_0.26.5_arm.deb",
+    "sha256": "c259868b4817a4d1ea987a49834be8949e1f543c6675808a6a978e765d2de62c",
+    "metadata": "Package: p11-kit\nVersion: 0.26.5\nArchitecture: arm"
+  },
+  {
+    "file": "pcre2_10.47_arm.deb",
+    "sha256": "9c395a0e9929c156a7567c1d9a5d68c0861c04866f43ed79f628a50237c3490b",
+    "metadata": "Package: pcre2\nVersion: 10.47\nArchitecture: arm"
+  },
+  {
+    "file": "pcre2grep_10.47_arm.deb",
+    "sha256": "536654f8ad81fb4f1746e115a1859a632c5eefc0a2e1242f6b94de375fb731f2",
+    "metadata": "Package: pcre2grep\nVersion: 10.47\nArchitecture: arm"
+  },
+  {
+    "file": "perl_5.42.2_arm.deb",
+    "sha256": "868440a63b34b377fe42e303ddeb2543a57c70e41f1c5e21ea84d7557c9858ad",
+    "metadata": "Package: perl\nVersion: 5.42.2\nArchitecture: arm"
+  },
+  {
+    "file": "pkg-config_0.29.2-3_arm.deb",
+    "sha256": "b306a9ebdaf8fa7555a0f101f8a94afce85274cf990b70b117961f14757a8b78",
+    "metadata": "Package: pkg-config\nVersion: 0.29.2-3\nArchitecture: arm"
+  },
+  {
+    "file": "procps_4.0.7_arm.deb",
+    "sha256": "c37535c6fff6105f597845ff565a8e0fdf1e2e7edb8906063ef6d7cfb93443e3",
+    "metadata": "Package: procps\nVersion: 4.0.7\nArchitecture: arm"
+  },
+  {
+    "file": "psmisc_23.7-1_arm.deb",
+    "sha256": "8498d94497e8fa64a1806f0f8966957309821939c5a9b70fabceb1c4184e0eef",
+    "metadata": "Package: psmisc\nVersion: 23.7-1\nArchitecture: arm"
+  },
+  {
+    "file": "pulseaudio-glib_17.0-4_arm.deb",
+    "sha256": "064023209805fb956e329e36c1bd2b6b41d7050a01c951d99600717179e98c39",
+    "metadata": "Package: pulseaudio-glib\nVersion: 17.0-4\nArchitecture: arm"
+  },
+  {
+    "file": "pulseaudio_17.0-4_arm.deb",
+    "sha256": "fd7b9203e739ad5e71fed738e670c168f834edfbb69a544f4340e202345c0bc2",
+    "metadata": "Package: pulseaudio\nVersion: 17.0-4\nArchitecture: arm"
+  },
+  {
+    "file": "python-tkinter_3.14.6-1_arm.deb",
+    "sha256": "eadac64585928af381a1be9886b38ec7871db399090d05dc798267e6968d65dd",
+    "metadata": "Package: python-tkinter\nVersion: 3.14.6-1\nArchitecture: arm"
+  },
+  {
+    "file": "python_3.14.6-1_arm.deb",
+    "sha256": "19d9cac2a69502bdeb11230c8fb13f16b5ab52353f556d7e771cd6ceaa446412",
+    "metadata": "Package: python\nVersion: 3.14.6-1\nArchitecture: arm"
+  },
+  {
+    "file": "pyunbound_1.26.0_arm.deb",
+    "sha256": "b32b7713b686f264f6861982bc3369e94980bc5aa559cfbb636c64377b6ba168",
+    "metadata": "Package: pyunbound\nVersion: 1.26.0\nArchitecture: arm"
+  },
+  {
+    "file": "pzstd_1.5.7-1_arm.deb",
+    "sha256": "b9f50c90e55e56f6377d4faa357a60c2d9b0a764bf1e1f5ed9ad20ac16bbb5fe",
+    "metadata": "Package: pzstd\nVersion: 1.5.7-1\nArchitecture: arm"
+  },
+  {
+    "file": "readline_8.3.3_arm.deb",
+    "sha256": "ba46cd34c20a0bcd582254bb9ffa2bb32f46a1568f4df92563c05a8ed07a7f39",
+    "metadata": "Package: readline\nVersion: 8.3.3\nArchitecture: arm"
+  },
+  {
+    "file": "resolv-conf_1.3_arm.deb",
+    "sha256": "081d62f6d29b6de49976628f400f536c71b4342badd06a652dd2e0c4338333c9",
+    "metadata": "Package: resolv-conf\nVersion: 1.3\nArchitecture: arm"
+  },
+  {
+    "file": "sed_4.10_arm.deb",
+    "sha256": "fa937425ab39679e719d5573233d37b1a32daec3e6b5220f3480fc57b82a5f75",
+    "metadata": "Package: sed\nVersion: 4.10\nArchitecture: arm"
+  },
+  {
+    "file": "speexdsp_1.2.1-1_arm.deb",
+    "sha256": "7351c7ab2c95879483756c1c52fd6e4f5c55599bef1e9be5a353a97d6ffc157f",
+    "metadata": "Package: speexdsp\nVersion: 1.2.1-1\nArchitecture: arm"
+  },
+  {
+    "file": "sqlite_3.53.4_arm.deb",
+    "sha256": "85ab816933b47e3d84182fc0041f507640001c6f81b6d6f4d5b691b06720915e",
+    "metadata": "Package: sqlite\nVersion: 3.53.4\nArchitecture: arm"
+  },
+  {
+    "file": "swig_4.5.1_arm.deb",
+    "sha256": "8d0cd243c72c57c228f486126a4180f8c00b8fe1ce11c51dd6e21b5f14b9e7db",
+    "metadata": "Package: swig\nVersion: 4.5.1\nArchitecture: arm"
+  },
+  {
+    "file": "tar_1.35-3_arm.deb",
+    "sha256": "859708d1dcfb45de1c269da8991e2774435d04c3ea633d08176acf5e0f54b349",
+    "metadata": "Package: tar\nVersion: 1.35-3\nArchitecture: arm"
+  },
+  {
+    "file": "tcl_8.6.16_arm.deb",
+    "sha256": "43694ed39a4da8efb1adecf32314c918ac6bf7574f80602b1e71be93e87171e7",
+    "metadata": "Package: tcl\nVersion: 8.6.16\nArchitecture: arm"
+  },
+  {
+    "file": "termux-am-socket_1.5.0-1_arm.deb",
+    "sha256": "5f22c566255341d4eef77ed1396abf94a050bedc6f529cd2abd373d929d2ce65",
+    "metadata": "Package: termux-am-socket\nVersion: 1.5.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "termux-core-static_0.4.0-1_arm.deb",
+    "sha256": "ba86e62a98d9917ffac4f353ba26103976bf6a4c5f5dbb6fba1f7aa872ecbc8b",
+    "metadata": "Package: termux-core-static\nVersion: 0.4.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "termux-core_0.4.0-1_arm.deb",
+    "sha256": "57b388feffe2687c771b8fdaf41ff1a7c800568ca2156f1ec2cf40dba7bc7543",
+    "metadata": "Package: termux-core\nVersion: 0.4.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "termux-exec_1:2.5.0-1_arm.deb",
+    "sha256": "bcae96fea9a166f20d988a888d4dbdadcdbcedd937c8644e3fad4d7870d45581",
+    "metadata": "Package: termux-exec\nVersion: 1:2.5.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "termux-tools_1.46.0+really1.45.0-1_arm.deb",
+    "sha256": "36d5a55f380c9e239ea272b973ef152fcde6ce8485b90115d6df089986849d85",
+    "metadata": "Package: termux-tools\nVersion: 1.46.0+really1.45.0-1\nArchitecture: arm"
+  },
+  {
+    "file": "texinfo_7.3_arm.deb",
+    "sha256": "229a35c05ab02ae4c825573d4e30a1331805634c9678f7a6916da3f3e58db05b",
+    "metadata": "Package: texinfo\nVersion: 7.3\nArchitecture: arm"
+  },
+  {
+    "file": "tk_8.6.14-1_arm.deb",
+    "sha256": "63099a37e9068c5796260119e2b6b09ddecdf1734c5c7246b2a8e20d0d36ea83",
+    "metadata": "Package: tk\nVersion: 8.6.14-1\nArchitecture: arm"
+  },
+  {
+    "file": "unbound_1.26.0_arm.deb",
+    "sha256": "06aab925dfc3a781379c0d425e545aac25d5d4fb538b72565873e1f3699e0407",
+    "metadata": "Package: unbound\nVersion: 1.26.0\nArchitecture: arm"
+  },
+  {
+    "file": "util-linux_2.42.1-4_arm.deb",
+    "sha256": "db6b847d57b958913a74ed83e8e7c8c1bb68670c0e1cea98cb3233ad6068ccfd",
+    "metadata": "Package: util-linux\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "uuid-utils_2.42.1-4_arm.deb",
+    "sha256": "2737d0588ef4ac15e02f7fe683a708899f24539508834943b78acb104f3a1379",
+    "metadata": "Package: uuid-utils\nVersion: 2.42.1-4\nArchitecture: arm"
+  },
+  {
+    "file": "xz-utils_5.8.4_arm.deb",
+    "sha256": "011ea35437b2ec1fb283f6f9f778701701002dd706d616169749160f35afc8f6",
+    "metadata": "Package: xz-utils\nVersion: 5.8.4\nArchitecture: arm"
+  },
+  {
+    "file": "zlib_1.3.2_arm.deb",
+    "sha256": "c63ee590f2f02254725bdd8e415582c70737b63712a20d5395b45e4b13ffffc5",
+    "metadata": "Package: zlib\nVersion: 1.3.2\nArchitecture: arm"
+  },
+  {
+    "file": "zstd_1.5.7-1_arm.deb",
+    "sha256": "87031a6369a7fd14108e4612d35e6296f8b933c6bc4d383b8aa18044d26f11f5",
+    "metadata": "Package: zstd\nVersion: 1.5.7-1\nArchitecture: arm"
+  }
+]

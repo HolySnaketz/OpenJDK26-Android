@@ -1,0 +1,71 @@
+0001-android-termux-jdk26.patch
+patching file make/autoconf/flags-cflags.m4
+patching file make/autoconf/libraries.m4
+patching file make/common/JdkNativeCompilation.gmk
+patching file make/data/hotspot-symbols/version-script-clang.txt
+patching file make/hotspot/lib/JvmOverrideFiles.gmk
+patching file make/modules/java.desktop/lib/ClientLibraries.gmk
+patching file make/modules/java.instrument/Lib.gmk
+patching file make/modules/jdk.jdwp.agent/Lib.gmk
+patching file src/hotspot/cpu/arm/icache_arm.cpp
+patching file src/hotspot/os/linux/os_linux.cpp
+patching file src/hotspot/os/posix/os_posix.cpp
+patching file src/hotspot/os_cpu/linux_aarch64/javaThread_linux_aarch64.hpp
+patching file src/hotspot/os_cpu/linux_aarch64/threadLS_linux_aarch64.S
+patching file src/hotspot/os_cpu/linux_arm/linux_arm_32.S
+patching file src/hotspot/os_cpu/linux_arm/os_linux_arm.cpp
+patching file src/hotspot/share/utilities/elfFile.hpp
+patching file src/hotspot/share/utilities/virtualizationSupport.cpp
+patching file src/java.base/linux/classes/sun/nio/fs/LinuxFileSystem.java
+patching file src/java.base/linux/classes/sun/nio/fs/LinuxFileSystemProvider.java
+patching file src/java.base/share/classes/sun/security/jca/ProviderConfig.java
+patching file src/java.base/share/native/libjava/jni_util.h
+patching file src/java.base/share/native/libjli/java.c
+patching file src/java.base/unix/classes/sun/net/dns/ResolverConfigurationImpl.java
+patching file src/java.base/unix/native/libjava/ProcessImpl_md.c
+patching file src/java.base/unix/native/libjava/TimeZone_md.c
+patching file src/java.base/unix/native/libjava/canonicalize_md.c
+patching file src/java.base/unix/native/libjava/jni_util_md.c
+patching file src/java.base/unix/native/libjava/path_util.c
+patching file src/java.base/unix/native/libjli/java_md.c
+patching file src/java.base/unix/native/libnet/net_util_md.h
+patching file src/java.base/unix/native/libnio/fs/UnixNativeDispatcher.c
+patching file src/java.desktop/share/classes/com/sun/java/swing/plaf/gtk/Metacity.java
+patching file src/java.desktop/share/classes/com/sun/media/sound/SoftSynthesizer.java
+patching file src/java.desktop/share/classes/sun/font/SunFontManager.java
+patching file src/java.desktop/share/classes/sun/print/PSPrinterJob.java
+patching file src/java.desktop/unix/classes/sun/awt/X11/MotifColorUtilities.java
+patching file src/java.desktop/unix/classes/sun/print/PrintServiceLookupProvider.java
+patching file src/java.desktop/unix/classes/sun/print/UnixPrintJob.java
+patching file src/java.desktop/unix/classes/sun/print/UnixPrintService.java
+patching file src/java.desktop/unix/native/common/awt/fontpath.c
+patching file src/java.prefs/unix/classes/java/util/prefs/FileSystemPreferences.java
+patching file src/java.security.jgss/share/classes/sun/security/krb5/Config.java
+patching file src/java.security.jgss/share/classes/sun/security/krb5/internal/ccache/FileCredentialsCache.java
+patching file src/java.smartcardio/unix/classes/sun/security/smartcardio/PlatformPCSC.java
+patching file src/jdk.attach/linux/classes/sun/tools/attach/VirtualMachineImpl.java
+patching file src/jdk.hotspot.agent/linux/native/libsaproc/symtab.c
+patching file src/jdk.jpackage/linux/classes/jdk/jpackage/internal/model/LinuxDebPackage.java
+patching file src/jdk.jpackage/linux/classes/jdk/jpackage/internal/resources/desktop_utils.sh
+patching file test/jdk/tools/jpackage/helpers/jdk/jpackage/test/PackageTest.java
+patching file test/jdk/tools/jpackage/share/LicenseTest.java
+patching file test/jdk/tools/jpackage/share/RuntimePackageTest.java
+
+0002-bionic-forbidden-function-declarations.patch
+patching file src/hotspot/share/utilities/compilerWarnings.hpp
+
+0003-jdk26-posix-jvm-path.patch
+patching file src/hotspot/os/linux/os_linux.cpp
+patching file src/hotspot/os/posix/os_posix.cpp
+
+0004-bionic-serviceability-core-notes.patch
+patching file src/jdk.hotspot.agent/linux/native/libsaproc/ps_core.c
+patching file src/jdk.hotspot.agent/linux/native/libsaproc/elfmacros.h
+patching file src/hotspot/os/posix/os_posix.cpp
+
+0005-bionic-sa-strerror.patch
+patching file src/jdk.hotspot.agent/linux/native/libsaproc/ps_proc.c
+
+tmpdir-path-length.diff
+patching file src/hotspot/os/posix/perfMemory_posix.cpp
+Hunk #1 succeeded at 128 (offset -2 lines).

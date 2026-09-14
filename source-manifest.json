@@ -1,0 +1,14 @@
+{
+  "base": "Official OpenJDK 26+35 RI",
+  "sourceArchiveSha256": "215fb2cc080e334538f5c57a2be3d34e64e97cf3c7655fe485b3cf13c87e1602",
+  "patchedFilesMatchedBothBuilds": 56,
+  "termuxPrefix": "/data/data/com.termux/files/usr",
+  "patches": {
+    "0001-android-termux-jdk26.patch": "92cf4db1d16a04322bba408360f85b436355e3d46834a03a97d8f2b8bb7271c3",
+    "0002-bionic-forbidden-function-declarations.patch": "3c31c09581cb866ec40b6ee5fa339423e28b18d9cb67cf1cef14293681e6385d",
+    "0003-jdk26-posix-jvm-path.patch": "a0121958f479ab4f2ec80ed1f508030ffb72b920c6d59ba56f47e2477738d216",
+    "0004-bionic-serviceability-core-notes.patch": "409236daa5b9eb5f804e939663a04961d64d5172b2b932dfb4f3c8e5a473d84c",
+    "0005-bionic-sa-strerror.patch": "8d444f286d91cd7f25971e80faf6a978596af2668d65c9c6ba2f5fa4ccc89b17",
+    "tmpdir-path-length.diff": "763ff83b7f47868dcfedabcca4a66edafaaee4b271d6b44fff2e7b0bbfbd67fd"
+  }
+}

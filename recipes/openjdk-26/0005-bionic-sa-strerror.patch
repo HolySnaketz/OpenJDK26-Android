@@ -1,0 +1,11 @@
+--- a/src/jdk.hotspot.agent/linux/native/libsaproc/ps_proc.c
++++ b/src/jdk.hotspot.agent/linux/native/libsaproc/ps_proc.c
+@@ -280,7 +280,7 @@
+     // GNU-specific:  char *strerror_r(int errnum, char *buf, size_t buflen);
+     // XSI-compliant: int   strerror_r(int errnum, char *buf, size_t buflen);
+     char buf[200];
+-#if defined(__GLIBC__) && defined(_GNU_SOURCE)
++#if (defined(__GLIBC__) || defined(__BIONIC__)) && defined(_GNU_SOURCE)
+     char* msg = strerror_r(errno, buf, sizeof(buf));
+ #else
+     int rc = strerror_r(errno, buf, sizeof(buf));

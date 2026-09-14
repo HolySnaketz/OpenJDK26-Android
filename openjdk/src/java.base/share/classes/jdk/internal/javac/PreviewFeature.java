@@ -1,0 +1,115 @@
+/*
+ * Copyright (c) 2019, 2025, Oracle and/or its affiliates. All rights reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ *
+ * This code is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 2 only, as
+ * published by the Free Software Foundation.  Oracle designates this
+ * particular file as subject to the "Classpath" exception as provided
+ * by Oracle in the LICENSE file that accompanied this code.
+ *
+ * This code is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * version 2 for more details (a copy is included in the LICENSE file that
+ * accompanied this code).
+ *
+ * You should have received a copy of the GNU General Public License version
+ * 2 along with this work; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ *
+ * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
+ * or visit www.oracle.com if you need additional information or have any
+ * questions.
+ */
+
+package jdk.internal.javac;
+
+import java.lang.annotation.*;
+
+/**
+ * Indicates the API declaration in question is associated with a
+ * <em>preview feature</em>. See JEP 12: "Preview Language and VM
+ * Features" (https://openjdk.org/jeps/12).
+ *
+ * Note this internal annotation is handled specially by the javac compiler.
+ * To work properly with {@code --release older-release}, it requires special
+ * handling in {@code make/langtools/src/classes/build/tools/symbolgenerator/CreateSymbols.java}
+ * and {@code src/jdk.compiler/share/classes/com/sun/tools/javac/jvm/ClassReader.java}.
+ *
+ * @since 14
+ */
+// Match the meaningful targets of java.lang.Deprecated, omit local
+// variables and parameter declarations
+@Target({ElementType.METHOD,
+         ElementType.CONSTRUCTOR,
+         ElementType.FIELD,
+         ElementType.PACKAGE,
+         ElementType.MODULE,
+         ElementType.TYPE})
+ // CLASS retention will hopefully be sufficient for the purposes at hand
+@Retention(RetentionPolicy.CLASS)
+// *Not* @Documented
+public @interface PreviewFeature {
+    /**
+     * Name of the preview feature the annotated API is associated
+     * with.
+     */
+    public Feature feature();
+
+    public boolean reflective() default false;
+
+    /**
+     * Enum of preview features in the current release.
+     * Values should be annotated with the feature's {@code JEP}.
+     */
+    public enum Feature {
+        // The JDK build process involves creating an interim javac which is then
+        // used to compile the rest of the JDK. The jdk.internal.javac.PreviewFeature
+        // annotation from the current sources is used when compiling interim javac.
+        // That's because the javac APIs of the current sources may be annotated with
+        // this annotation and they may be using the enum constants of the current sources.
+        // Furthermore, when compiling interim javac, the class files from the bootstrap JDK get
+        // used and those may also contain the PreviewFeature annotation. However, they may be
+        // using the enum constants of the bootstrap JDK's PreviewFeature annotation.
+        // If javac sees an annotation with an unknown enum constant, it produces a warning,
+        // and that in turn fails the build.
+        // So, in the current sources, we need to preserve the PreviewFeature enum constants
+        // for as long as the interim javac build needs it. As a result, we retain PreviewFeature
+        // enum constants for preview features that are present in the bootstrap JDK.
+        // Older constants can be removed.
+        //
+        // For example, Class-File API became final in JDK 24. As soon as JDK 23 was dropped as
+        // the bootstrap JDK, the CLASSFILE_API enum constant became eligible for removal.
+
+        //---
+        @JEP(number=525, title="Structured Concurrency", status="Sixth Preview")
+        STRUCTURED_CONCURRENCY,
+        @JEP(number = 526, title = "Lazy Constants", status = "Second Preview")
+        LAZY_CONSTANTS,
+        @JEP(number=524, title="PEM Encodings of Cryptographic Objects",
+            status="Second Preview")
+        PEM_API,
+        LANGUAGE_MODEL,
+        /**
+         * A key for testing.
+         */
+        @JEP(number=2_147_483_647, title="Test Feature")
+        TEST,
+        ;
+    }
+
+    /**
+     * Annotation identifying the JEP associated with a preview feature.
+     */
+    @Target(ElementType.FIELD)
+    @Retention(RetentionPolicy.CLASS)
+    @interface JEP {
+        /** JEP number */
+        int number() default 0;
+        /** JEP title in plain text */
+        String title();
+        /** JEP status such as "Preview", "Second Preview", etc */
+        String status() default "Preview";
+    }
+}

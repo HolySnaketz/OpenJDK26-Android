@@ -1,0 +1,127 @@
+--- a/src/hotspot/os/linux/os_linux.cpp
++++ b/src/hotspot/os/linux/os_linux.cpp
+@@ -209,8 +209,6 @@
+ // avoid this
+ static bool suppress_primordial_thread_resolution = false;
+ 
+-static bool read_so_path_from_maps(const char* so_name, char* buf, int buflen);
+-
+ // utility functions
+ 
+ bool os::available_memory(physical_memory_size_type& value) {
+@@ -1573,34 +1571,6 @@
+   return false;
+ }
+ 
+-static bool read_so_path_from_maps(const char* so_name, char* buf, int buflen) {
+-  FILE *fp = fopen("/proc/self/maps", "r");
+-  assert(fp, "Failed to open /proc/self/maps");
+-  if (!fp) {
+-    return false;
+-  }
+-
+-  char maps_buffer[2048];
+-  while (fgets(maps_buffer, 2048, fp) != NULL) {
+-    if (strstr(maps_buffer, so_name) == NULL) {
+-      continue;
+-    }
+-
+-    char *so_path = strchr(maps_buffer, '/');
+-    so_path[strlen(so_path) - 1] = '\0'; // Cut trailing \n
+-    jio_snprintf(buf, buflen, "%s", so_path);
+-    fclose(fp);
+-    return true;
+-  }
+-
+-  fclose(fp);
+-  return false;
+-}
+-
+-// Loads .dll/.so and
+-// in case of error it checks if .dll/.so was built for the
+-// same architecture as Hotspot is running on
+-
+ // Remember the stack's state. The Linux dynamic linker will change
+ // the stack to 'executable' at most once, so we must safepoint only once.
+ bool os::Linux::_stack_is_executable = false;
+@@ -2699,19 +2669,6 @@
+       char hbuf_level[60];
+       char hbuf_type[60];
+       char hbuf_size[60];
+-#ifdef __ANDROID__
+-  if (dli_fname[0] == '\0') {
+-    return;
+-  }
+-
+-  if (strchr(dli_fname, '/') == NULL) {
+-    bool ok = read_so_path_from_maps(dli_fname, buf, buflen);
+-    assert(ok, "unable to turn relative libjvm.so path into absolute");
+-    return;
+-  }
+-
+-  snprintf(buf, buflen, /* "%s/lib/%s/server/%s", java_home_var, cpu_arch, */ "%s", dli_fname);
+-#else // !__ANDROID__
+       char hbuf_coherency_line_size[80];
+       os::snprintf_checked(hbuf_level, 60, "/sys/devices/system/cpu/cpu0/cache/index%u/level", i);
+       os::snprintf_checked(hbuf_type, 60, "/sys/devices/system/cpu/cpu0/cache/index%u/type", i);
+@@ -2725,7 +2682,6 @@
+       }
+     }
+   }
+-#endif
+ 
+   // we miss the cpufreq entries on Power and s390x
+ #if defined(AMD64)
+--- a/src/hotspot/os/posix/os_posix.cpp
++++ b/src/hotspot/os/posix/os_posix.cpp
+@@ -1091,6 +1091,38 @@
+   return is_same;
+ }
+ 
++#ifdef __ANDROID__
++// Bionic may report a basename through dladdr. Resolve the mapping containing
++// this function, rather than choosing an arbitrary matching library name.
++static bool android_jvm_path_from_maps(char* buf, size_t buflen) {
++  FILE* maps = os::fopen("/proc/self/maps", "r");
++  if (maps == nullptr) {
++    return false;
++  }
++  const uintptr_t target = reinterpret_cast<uintptr_t>(CAST_FROM_FN_PTR(address, os::jvm_path));
++  char line[MAXPATHLEN + 256];
++  bool found = false;
++  while (fgets(line, sizeof(line), maps) != nullptr) {
++    unsigned long begin, end;
++    if (sscanf(line, "%lx-%lx", &begin, &end) != 2 || target < begin || target >= end) {
++      continue;
++    }
++    char* path = strchr(line, '/');
++    if (path == nullptr) {
++      continue;
++    }
++    path[strcspn(path, "\n")] = '\0';
++    if (strlen(path) < buflen) {
++      os::snprintf(buf, buflen, "%s", path);
++      found = true;
++    }
++    break;
++  }
++  fclose(maps);
++  return found;
++}
++#endif
++
+ static char saved_jvm_path[MAXPATHLEN] = {0};
+ 
+ // Find the full path to the current module, libjvm.so
+@@ -1132,6 +1164,11 @@
+   if (fname[0] != '\0') {
+     rp = os::realpath(fname, buf, buflen);
+   }
++#ifdef __ANDROID__
++  if (rp == nullptr && android_jvm_path_from_maps(buf, buflen)) {
++    rp = buf;
++  }
++#endif
+   if (rp == nullptr) {
+     return;
+   }
