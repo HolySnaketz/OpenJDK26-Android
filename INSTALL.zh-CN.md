@@ -43,3 +43,5 @@ bash run-termux-smoke.sh --gui
 还需验证 jcmd/jstack/jmap/jhsdb、剪贴板、Robot、打印与音频，以及 ARM32 JIT/G1 压力测试。记录设备、Android API、ABI、Termux 版本和错误日志。API28 与 API35 端点及中间版本均未取得真机结果。
 
 不得将静态 ELF 检查当作 AWT/Swing 已实际可用的证明。Android 15 的 16 KiB 页兼容也需要系统及外部依赖共同满足条件；本项目报告仅核验 JDK 自身 ELF。
+
+注：本文档由ChatGPT生成
