@@ -21,8 +21,8 @@ OpenJDK 26 的 SA `PlatformInfo.knownCPU` 不包含 arm，LinuxDebuggerLocal 没
 
 - `openjdk-26-android-aarch64-api28.tar`
 - `openjdk-26-android-arm-api28.tar`
-- 每个 tar 随附 `.sha256`
-- 安装与真机测试见 [INSTALL.zh-CN.md](INSTALL.zh-CN.md)。
+- 每个 tar 随附 `.sha256`、`.manifest.json`、`.elf-report.json`。
+- 安装与真机测试见 [INSTALL.zh-CN.md](INSTALL.zh-CN.md)。（内容由ChatGPT生成）
 
 安装目录固定为 `/data/data/com.termux/files/usr/lib/jvm/java-26-openjdk`。通过 Termux pkg 安装外部依赖；图形通过 Termux:X11。Android 运行不使用 Linux 容器或 glibc 兼容层。已验证兼容 Android 15
 
@@ -32,7 +32,7 @@ OpenJDK 26 的 SA `PlatformInfo.knownCPU` 不包含 arm，LinuxDebuggerLocal 没
 
 参考 Termux packages 提交 `c0df78899f52c9905e07321c999f24dd434bb7ae` 的 JDK25 移植。五个补丁覆盖 55 个原始文件，顺序零模糊应用检查通过；另有路径长度模板补丁 `tmpdir-path-length.diff`。修复涉及 Android 路径、Bionic 声明、JDK26 的 POSIX JVM 定位和 SA ELF/strerror 接口。保留官方该架构的默认 server 功能。
 
-实际编译使用 NDK r29、主机 OpenJDK25、Clang21 和 Pandoc。详细复现步骤见 [BUILD.zh-CN.md](BUILD.zh-CN.md)。
+实际编译使用 NDK r29、主机 OpenJDK25、Clang21 和 Pandoc。详细复现步骤见 [BUILD.zh-CN.md](BUILD.zh-CN.md)。（内容由ChatGPT生成）
 
 `downloads/sources.lock.json` 固定源码和工具链哈希。`research/dependencies-{arch}.json` 记录每架构 167 个依赖缓存包的版本和哈希；Termux 在线仓库会变化，复现时应保留缓存并核对记录。
 
