@@ -1,4 +1,4 @@
-# 安装与验收（构建产物尚待 Android 真机验证）
+# 安装与验收
 
 适用默认包名 com.termux 的 Termux，固定前缀 /data/data/com.termux/files/usr。ARM64 与 ARM32 必须选择各自架构的 tar，不能根据 CPU 支持 ARM64 就推断系统支持 32 位进程。先在 Termux 执行 `dpkg --print-architecture`，结果 aarch64 或 arm 对应同名产物。
 
