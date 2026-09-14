@@ -50,3 +50,5 @@ python3 scripts/record-dependencies.py
 `downloads/` 中额外的 GA tar、`.partial` 及 Windows `source/` 不用于构建。`scripts/` 中生成初始补丁的 prepare/fix 单次脚本保留作工作记录，不属于复现入口；正式补丁是 `recipes/openjdk-26/*.patch` 加路径模板 diff，按 Termux 标准步骤应用。不要重复运行单次补丁生成脚本。
 
 依赖记录对应 WSL `build-ARCH/_cache-ARCH/*.deb`。应保存这两个缓存目录；只固定 Termux 源码提交并不能固定在线仓库未来的二进制依赖。
+
+注：本文档由ChatGPT生成
