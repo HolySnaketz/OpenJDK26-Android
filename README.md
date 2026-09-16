@@ -1,5 +1,7 @@
 # OpenJDK 26 Android / Termux 移植
 
+基于官方 **OpenJDK 26+35 Reference Implementation（RI）** 的 Android / Termux 移植，提供 ARM64（`aarch64`）和 ARM32（`arm`）候选构建。项目包含移植补丁、构建与打包脚本、依赖记录及验收程序，面向需要在 Termux 中运行 Java 命令行程序或通过 Termux:X11 使用 AWT/Swing 的开发者。
+
 ## 当前结果
 
 ARM64 和 ARM32 的 `make images` 均已成功，且已在设备 PLC110 中验证 ARM64 版本。
